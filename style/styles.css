@@ -1053,7 +1053,7 @@ footer {
 
 
 
-/* ------------ RESPONSIBLE | TABLET ------------  
+/* ------------ RESPONSIBLE | TABLET ------------ */  
 
 @media (max-width: 1050px) {
   .menu-btn .lnr {
@@ -1155,7 +1155,7 @@ footer {
   }
 }
 
- ------------ RESPONSIBLE | MOBILE ------------  
+/* ------------ RESPONSIBLE | MOBILE ------------  */
 
 @media (max-width: 660px) {
   .home h1 {
@@ -1211,167 +1211,5 @@ footer {
   }
 }
 
-*/
-
-/* Media Queries for Mobile Devices */
-
-@media (max-width: 660px) {
-  /* General adjustments */
-  .container {
-    width: var(--width-sm);
-  }
-
-  /* Navbar adjustments */
-  .menu-btn .lnr {
-    display: block;
-  }
-
-  nav .navlist {
-    flex-direction: column;
-    position: absolute;
-    top: 4.7rem;
-    right: 5rem;
-    width: 22rem;
-    background: var(--color-text);
-    z-index: 11;
-    display: none;
-    opacity: 0;
-    transition: var(--transition);
-  }
-
-  nav .navlist.active {
-    display: flex;
-    opacity: 1;
-  }
-
-  nav .navlist li a {
-    width: 100%;
-    display: inline-block;
-    padding: 1rem 0;
-    text-align: center;
-  }
-
-  nav .nav-social {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Home section adjustments */
-  .home .swiper-slide .content {
-    transform: translate(0, 70%);
-    text-align: center;
-  }
-
-  .home .content p {
-    margin: 1rem 0.5rem;
-  }
-
-  .home .home-search input {
-    height: 3rem;
-    max-width: 18rem;
-  }
-
-  .home .home-search .btn {
-    height: 3rem;
-    width: 3rem;
-    padding: 1rem;
-    left: -3rem;
-    top: 0.09rem;
-  }
-
-  .home .swiper-button-next::after,
-  .home .swiper-button-prev::after {
-    top: -15rem;
-  }
-
-  /* About section adjustments */
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-
-  .about-container .left,
-  .about-container .right {
-    height: auto;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  .about-container .right::before {
-    display: none;
-  }
-
-  /* Services section adjustments */
-  .services-container {
-    grid-template-columns: 1fr;
-  }
-
-  .services-container .col {
-    margin-bottom: 2rem;
-  }
-
-  /* Shop section adjustments */
-  .shop .swiper-slide {
-    width: 100%;
-  }
-
-  .shop .swiper-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .shop .swiper-slide {
-    width: calc(100% - 1rem);
-    margin: 0.5rem 0;
-  }
-
-  .shop .swiper-slide .image {
-    width: 100%;
-  }
-
-  /* Testimonial section adjustments */
-  .testimonial .swiper-slide .profile {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  /* Blog section adjustments */
-  .blog-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .blog-container .box {
-    width: 100%;
-  }
-
-  /* Contact section adjustments */
-  .contact-container {
-    flex-direction: column;
-  }
-
-  .contact-container .left,
-  .contact-container .right {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  /* Footer section adjustments */
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-container .box {
-    margin-bottom: 2rem;
-  }
-
-  .footer-container .social {
-    justify-content: center;
-  }
-}
 
 
