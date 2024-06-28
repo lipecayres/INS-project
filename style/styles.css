@@ -199,14 +199,13 @@ nav .nav-social i:hover {
   cursor: pointer;
 }
 
-#store-icon{
+#store-icon {
   margin: 1rem;
 }
 
-#store-icon-a{
+#store-icon-a {
   color: var(--color-primary);
 }
-
 
 /* 
 ------------ 
@@ -913,7 +912,6 @@ ABOUT
   z-index: 11;
   border: 0.1rem solid var(--color-secondary);
   background: none;
-
 }
 
 .contact-form .btn span {
@@ -940,7 +938,7 @@ ABOUT
 }
 
 .contact-form .btn:active {
-  transform: scale(.90);
+  transform: scale(0.9);
 }
 
 .contact-container .right p {
@@ -956,7 +954,7 @@ ABOUT
 
 footer {
   box-shadow: var(--shadow);
-  padding: 2rem 0 .5rem;
+  padding: 2rem 0 0.5rem;
 }
 
 .footer-container {
@@ -1049,11 +1047,7 @@ footer {
   text-align: center;
 }
 
-
-
-
-
-/* ------------ RESPONSIBLE | TABLET ------------ */  
+/* ------------ RESPONSIBLE | TABLET ------------ */
 
 @media (max-width: 1050px) {
   .menu-btn .lnr {
@@ -1123,6 +1117,12 @@ footer {
     margin: 0.5rem 0;
   }
 
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    visibility: hidden;
+  }
+
   @media (max-width: 824px) {
     .title h2 {
       font-size: 2.7rem;
@@ -1152,14 +1152,25 @@ footer {
     .footer-container {
       grid-template-columns: 1fr 1fr;
     }
+
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      visibility: hidden;
+    }
+
+    iframe {
+      max-width: 300px;
+    }
   }
+
 }
 
 /* ------------ RESPONSIBLE | MOBILE ------------  */
 
 @media (max-width: 660px) {
   .home h1 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .container {
@@ -1167,7 +1178,7 @@ footer {
   }
 
   .home .swiper-slide .content {
-    transform: translate(0, 70%);
+    transform: translate(0, 30%);
     text-align: center;
   }
 
@@ -1176,7 +1187,7 @@ footer {
   }
 
   .home .home-search input {
-    height: 3rem;
+    height: 2rem;
     max-width: 18rem;
   }
 
@@ -1206,10 +1217,38 @@ footer {
     gap: 2rem;
   }
 
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer .box-newsletter h4 {
+    font-size: 1rem;
+  }
+
+  footer .box-newsletter p{
+    font-size: 1rem;
+    color: red;
+  }
+
+
+
   .footer-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+  }
+
+  .footer img {
+    max-width: 10rem;
+  }
+
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    visibility: hidden;
+  }
+
+  iframe {
+    max-width: 300px;
   }
 }
-
-
-
