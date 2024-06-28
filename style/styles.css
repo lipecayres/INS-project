@@ -1063,17 +1063,14 @@ footer {
     background: var(--color-text);
     z-index: 11;
     display: none;
-    opacity: 0;
+    opacity: 0; 
     transition: var(--transition);
   }
 
-  nav .navlist:active {
+  nav .navlist.active {
     display: flex;
     opacity: 1;
-  }
 
-  .navlist li a {
-    width: 100%;
   }
 
   .navlist li a {

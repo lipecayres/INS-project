@@ -62,7 +62,6 @@ var swiper = new Swiper(".testimonial-swiper", {
   
   menuBtn.onclick = function() {
       menuBtn.classList.toggle("lnr-chevron-up");
-      menuBtn.classList.toggle("lnr-menu");
       navList.classList.toggle("active");
   };
   
